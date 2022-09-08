@@ -3,7 +3,49 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/StepikProfessionalCourse/condensed.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/data2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/StepikProfessionalCourse/deniro.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/domain_usage.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/name_log.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/new_name_log.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -17,6 +59,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/StepikProfessionalCourse/sorted_student_counts.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/student_counts.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/StepikProfessionalCourse/test.csv">
           <value>
             <Attribute>
@@ -24,7 +80,20 @@
             </Attribute>
           </value>
         </entry>
-        <entry />
+        <entry key="/StepikProfessionalCourse/titanic.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/wifi.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
