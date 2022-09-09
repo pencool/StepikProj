@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/StepikProfessionalCourse/data3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/StepikProfessionalCourse/deniro.csv">
           <value>
             <Attribute>
@@ -49,6 +56,13 @@
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/StepikProfessionalCourse/playgrounds.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>
