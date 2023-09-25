@@ -5,7 +5,7 @@ def takes_positive(func):
                 raise TypeError
             elif i <= 0:
                 raise ValueError
-
+        return func(*args, **kwargs)
     return wrapper
 
 
