@@ -1,6 +1,13 @@
-random_numbers = lambda x, y: iter(range(x, y+1), '')
+from random import choice
 
-iterator = random_numbers(1, 1)
 
-print(next(iterator))
-print(next(iterator))
+def random_numbers(left, right):
+    itr = lambda: choice(list(range(left,right + 1)))
+    return iter(itr, right + 2)
+
+
+iterator = random_numbers(1, 10)
+
+print(next(iterator) in range(1, 11))
+print(next(iterator) in range(1, 11))
+print(next(iterator) in range(1, 11))
