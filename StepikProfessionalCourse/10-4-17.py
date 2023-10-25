@@ -7,6 +7,7 @@ class Xrange:
         self.s = s
         self.e = e
         self.step = step
+        self.itr = self.rng()
 
     def __iter__(self):
         return self
@@ -14,16 +15,16 @@ class Xrange:
     def rng(self):
         mas = [self.s]
         x = self.s
-        for i in range(int((self.e - self.s) / self.step)):
+        for i in range(int((self.e - self.s) / self.step)-1):
             x += self.step
             mas.append(x)
         return iter(mas)
 
     def __next__(self):
         self.i += 1
-        if self.i >= self.e:
+        if self.i >= int((self.e - self.s) / self.step):
             raise StopIteration
-        return next(self.rng())
+        return next(self.itr)
 
 
 xrange = Xrange(0, 3, 0.5)
