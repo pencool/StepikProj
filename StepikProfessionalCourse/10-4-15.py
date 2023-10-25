@@ -1,4 +1,4 @@
-from random import choice
+from random import choices
 
 
 class RandomNumbers:
@@ -7,14 +7,16 @@ class RandomNumbers:
         self.l = l
         self.r = r
         self.n = n
+        self.itr = iter(choices(list(range(self.l, self.r + 1)), k=self.n))
 
     def __iter__(self):
         return self
 
     def __next__(self):
         self.i += 1
-        itr = lambda: choice(list(range(self.l, self.r + 1)))
-        return iter(itr, self.r + 2)
+        if self.i >= self.n:
+            raise StopIteration
+        return next(self.itr)
 
 
 iterator = RandomNumbers(1, 1, 3)
