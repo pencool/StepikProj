@@ -2,8 +2,8 @@ from random import choices
 
 
 class Xrange:
-    def __init__(self, s, e, step):
-        self.i = -1
+    def __init__(self, s, e, step=1):
+        self.i = s - step
         self.s = s
         self.e = e
         self.step = step
@@ -15,18 +15,24 @@ class Xrange:
     def rng(self):
         mas = [self.s]
         x = self.s
-        for i in range(int((self.e - self.s) / self.step)-1):
+        for i in range(int(self.s * 100), int((self.e - self.step) * 100),
+                       int(self.step * 100)):
             x += self.step
             mas.append(x)
+            print(mas)
         return iter(mas)
 
     def __next__(self):
-        self.i += 1
-        if self.i >= int((self.e - self.s) / self.step):
-            raise StopIteration
+        self.i += self.step
+        if self.step < 0:
+            if self.i < self.e:
+                raise StopIteration
+        else:
+            if self.i >= self.e:
+                raise StopIteration
         return next(self.itr)
 
 
-xrange = Xrange(0, 3, 0.5)
+xrange = Xrange(10, 1, -1)
 
-print(*xrange, sep='; ')
+print(*xrange)
