@@ -3,7 +3,7 @@ def flatten(nested_list):
         if isinstance(i, int):
             yield i
         else:
-            yield flatten(i)
+            yield from flatten(i)
 
 
 generator = flatten([[1, 2], [[3]], [[4], 5]])
